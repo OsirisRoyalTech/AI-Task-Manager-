@@ -1,0 +1,38 @@
+1.	Text-to-Speech and Speech Recognition:
+  o	The pyttsx3 library is used to provide vocal responses.
+  o	The speech_recognition library listens for the user’s voice and converts it to text using Google’s API.
+
+2.	Tasks Management:
+  o	The tasks are stored in a dictionary, with the date as the key and the tasks for that day as the value.
+  o	The update_tasks function listens to the user’s task input and updates the tasks for the current date.
+  o	If the user says "no changes to the schedule," the script will not update anything.
+  o	The display_tasks function will display the tasks for the day if any are present.
+
+3.	Daily Task Update:
+  o	The script will ask the user daily whether they want to update their tasks for the day. If the user says "yes," it will listen for the 
+    task input and update the tasks. If the user says "no," it will display the tasks for that day.
+
+4.	User Interaction:
+  o	The script constantly runs in a loop and listens for input to either update the tasks, display them, or exit the application.
+
+Usage Example:
+  •	The assistant will start by asking if you want to update your tasks for today. If you say "yes," it will listen to your input for tasks.
+  •	You can say "no changes to the schedule" if there are no updates.
+  •	You can ask the assistant to show your tasks for the day or exit the application by saying "exit."
+
+Sample Interaction:
+  1.	The assistant asks: "Would you like to update your tasks for today?"
+  2.	You respond: "Yes."
+  3.	The assistant asks: "What tasks do you have for today?"
+  4.	You say: "Finish report and attend team meeting."
+
+5.	The assistant confirms: "Your tasks for today are: Finish report and attend team meeting."
+If no tasks need updating:
+  •	The assistant asks: "Would you like to update your tasks for today?"
+  •	You respond: "No."
+  •	The assistant displays: "Here are your tasks for today: Finish report and attend team meeting."
+
+Notes:
+  •	This script is simple and intended for local use; a more complex system could be integrated with a calendar API (e.g., Google Calendar) 
+    for syncing tasks and reminders.
+  •	You may need to adjust microphone settings or handle errors more robustly depending on your environment.
